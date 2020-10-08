@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<HBox prefHeight="400.0" prefWidth="600.0" spacing="10.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.e.controller.MainController">
+   <padding>
+      <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+   </padding>
+   <children>
+      <VBox spacing="5.0">
+         <children>
+            <VBox alignment="TOP_CENTER" spacing="5.0" VBox.vgrow="ALWAYS">
+               <children>
+                  <TextField fx:id="name" promptText="название" />
+                  <HBox alignment="TOP_CENTER">
+                     <children>
+                        <DatePicker fx:id="dataIn" maxWidth="1.7976931348623157E308" promptText="Дата прибытия" HBox.hgrow="ALWAYS" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="TOP_CENTER">
+                     <children>
+                        <DatePicker fx:id="dataOut" maxWidth="1.7976931348623157E308" promptText="Дата отправки" HBox.hgrow="ALWAYS" />
+                     </children>
+                  </HBox>
+                  <TextArea fx:id="text" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefWidth="200.0" promptText="Описание" VBox.vgrow="SOMETIMES" />
+               </children>
+            </VBox>
+            <VBox alignment="BOTTOM_CENTER" spacing="5.0">
+               <children>
+                  <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#Create" text="Создать заказ" />
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+      <VBox fx:id="VboxT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" spacing="5.0" HBox.hgrow="ALWAYS" />
+   </children>
+</HBox>
